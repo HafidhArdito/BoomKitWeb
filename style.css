@@ -99,6 +99,8 @@ section{
     max-width:600px;
     margin:auto;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
+    width:100%;
+    max-width:600px;
 }
 
 .card h2{
@@ -132,6 +134,10 @@ section{
     flex:1;
 }
 
+input{
+    width:100%;
+}
+
 button{
     width:100%;
     margin-top:20px;
@@ -161,6 +167,7 @@ button:hover{
 
 .disease{
     background:#fff;
+    overflow:hidden;
     border-radius:20px;
     padding:25px;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
@@ -176,10 +183,10 @@ button:hover{
     width:100%;
     max-width:500px;
     height:auto;
-    object-fit:cover;
-    border-radius:12px;
     display:block;
     margin:0 auto 20px;
+    object-fit:cover;
+    border-radius:12px;
 }
 
 .disease p{
@@ -195,6 +202,16 @@ footer{
     color:white;
     width:100%;
     margin-top:auto;
+}
+
+#penyakit h2,
+#jadwal h2,
+#tips h2{
+
+    font-size:clamp(1.8rem,4vw,2.5rem);
+    line-height:1.3;
+    word-break:break-word;
+
 }
 
 @media (max-width:768px){
@@ -237,7 +254,7 @@ footer{
 
     .row{
         flex-direction:column;
-        gap:0;
+        gap:15px;
     }
 
     section{
